@@ -23,9 +23,9 @@ export default function BlogPostItemWrapper(props) {
 					<Giscus
 						id="blog_comments"
 						repo="BazZziliuS/docusaurus"
-						repoId="R_kgDOHVBfKA"
+						repoId="R_kgDOMvs6kg"
 						category="Blog comments"
-						categoryId="DIC_kwDOHVBfKM4CRnM9"
+						categoryId="DIC_kwDOMvs6ks4CiW1o"
 						mapping="pathname"
 						reactionsEnabled="1"
 						emitMetadata="0"

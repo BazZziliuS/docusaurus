@@ -1,47 +1,27 @@
 ---
+slug: /
+title: ❤️ Моя Wiki
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+Вдохновлен идеей [amd-nick](https://blog.amd-nick.me)
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Здесь есть
 
-## Getting Started
+- Разные заметки
+- Исследования
+- Структуризация информации
 
-Get started by **creating a new site**.
+## INFO
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- Рядышком есть [блог](/) для постов-рассказов и размышлений.
+- Следить за апдейтами и предложить свои правки можно здесь: [GitHub](https://github.com/BazZziliuS/docusaurus/tree/main/docs)
+- Здесь нет "старой" и "новой" информации, нет сортировки информации по дате, только навигация по темам в сайдбаре
 
-### What you'll need
+:::tip
+Рекомендую попробовать использовать поиск по сайту через `Ctrl + K` (cmd + k на mac)
+:::
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+![Crew Dragon Launch](https://i.imgur.com/5mJhId8.png)
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+_Запуск Crew Dragon от SpaceX_

@@ -18,9 +18,9 @@ export default function DocPaginatorWrapper(props) {
           <Giscus
             id="comments"
             repo="BazZziliuS/docusaurus"
-            repoId="R_kgDOHVBfKA"
+            repoId="R_kgDOMvs6kg"
             category="Docs comments"
-            categoryId="DIC_kwDOHVBfKM4CRnJe"
+            categoryId="DIC_kwDOMvs6ks4CiW1o"
             mapping="pathname"
             reactionsEnabled="1"
             emitMetadata="0"

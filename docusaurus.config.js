@@ -94,7 +94,7 @@ const config = {
             items: [
               {label: '📦 Куча полезностей', type: 'doc', docId: 'intro'},
               {label: '👤 Обо мне', to: 'about'},
-              {label: '✈️ TG Боты', to: 'docs/telegram/bots'},
+              {label: '✈️ Боты', to: 'docs/bots'},
             ],
           },
           {
