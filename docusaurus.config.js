@@ -74,7 +74,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Лого',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
