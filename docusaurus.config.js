@@ -93,8 +93,8 @@ const config = {
             position: 'left',
             items: [
               {label: '📦 Куча полезностей', type: 'doc', docId: 'intro'},
-              {label: '👤 Обо мне', to: 'about'},
               {label: '✈️ Боты', to: 'docs/bots'},
+              {label: '👤 Обо мне', to: 'about'},
             ],
           },
           {
@@ -102,6 +102,12 @@ const config = {
             position: 'right',
             className: "header-github-link",
             "aria-label": "GitHub repository",
+          },
+          {
+            href: 'https://t.me/bazzziliu5',
+            position: 'right',
+            className: "header-telegram-link",
+            "aria-label": "Telegram",
           },
         ],
       },
