@@ -4,6 +4,8 @@ tags: [bots]
 
 # ✈️ Боты
 
+## Заказы
+
 ### AuroraLands BOT
 - **Описание:** Бот для управления персоналом.
 - **Ссылка:** [AuroraLands Discord](https://discord.gg/txp8h85RFP)
