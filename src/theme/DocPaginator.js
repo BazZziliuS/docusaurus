@@ -19,7 +19,7 @@ export default function DocPaginatorWrapper(props) {
             id="comments"
             repo="BazZziliuS/docusaurus"
             repoId="R_kgDOMvs6kg"
-            category="Docs comments"
+            category="Comments"
             categoryId="DIC_kwDOMvs6ks4CiW1o"
             mapping="pathname"
             reactionsEnabled="1"

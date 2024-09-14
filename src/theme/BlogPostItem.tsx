@@ -24,7 +24,7 @@ export default function BlogPostItemWrapper(props) {
 						id="blog_comments"
 						repo="BazZziliuS/docusaurus"
 						repoId="R_kgDOMvs6kg"
-						category="Blog comments"
+						category="Comments"
 						categoryId="DIC_kwDOMvs6ks4CiW1o"
 						mapping="pathname"
 						reactionsEnabled="1"
