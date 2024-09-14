@@ -3,3 +3,7 @@ docusaurus:
   permalink: /docusaurus
   description: Темы связанные с Docusaurus
 
+bots:
+  label: Боты
+  permalink: /bots
+  description: Темы связанные с Ботами
