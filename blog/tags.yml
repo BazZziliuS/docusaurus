@@ -7,3 +7,8 @@ bots:
   label: Боты
   permalink: /bots
   description: Темы связанные с Ботами
+
+hosting:
+  label: Хостинг
+  permalink: /hosting
+  description: Темы связанные с Хостингом
