@@ -3,7 +3,6 @@ bazzzilius:
   title: Back End Engineer
   image_url: https://github.com/bazzzilius.png
   page:
-    permalink: '/all-bazzzilius-articles'
+    permalink: '/bazzzilius'
   socials:
     github: bazzzilius
-    aeza: https://aeza.net/?ref=507375
