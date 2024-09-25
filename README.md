@@ -1,41 +1,22 @@
-# Website
+# blog.bazzzilius.ru
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Этот репозиторий содержит исходный код блога, размещённого на [blog.bazzzilius.ru](https://blog.bazzzilius.ru).
 
-### Installation
+## Вопросы и предложения
 
-```
-$ yarn
-```
+Если у вас есть вопросы или предложения, оставляйте их в разделе [Issues](https://github.com/BazZziliuS/docusaurus/issues). Исправления ошибок принимаются через [Pull Requests](https://github.com/BazZziliuS/docusaurus/pulls).
 
-### Local Development
+### Комментарии к постам
 
-```
-$ yarn start
-```
+Вы можете оставлять свои комментарии к постам блога в специальной категории на GitHub Discussions: [Комментарии](https://github.com/BazZziliuS/docusaurus/discussions/categories/comments).
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Как это работает?
 
-### Build
+1. **CI/CD через Vercel**: Каждый коммит автоматически запускает процесс сборки сайта через платформу [Vercel](https://vercel.com). Vercel билдит сайт и бесплатно хостит его на своих серверах.
+   
+2. **Подключение домена через Cloudflare**: Чтобы сайт был доступен по красивой ссылке, в [Cloudflare](https://cloudflare.com) настроен CNAME-запись, которая ссылается на домен, выданный Vercel после деплоя.
 
-```
-$ yarn build
-```
+### Как внести свой вклад?
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- **Предложения и вопросы**: Открывайте тикеты в разделе Issues.
+- **Исправления и улучшения**: Оформляйте свои изменения через Pull Request, следуя стандартным правилам ведения репозиториев.
