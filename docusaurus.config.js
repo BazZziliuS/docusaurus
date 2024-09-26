@@ -38,6 +38,8 @@ const config = {
   plugins: [
     ['docusaurus-plugin-yandex-metrica', {
       counterID: '98339264',
+      enableInProdOnly: true,
+      webvisor: true
     }],
   ],
 
