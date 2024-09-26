@@ -71,6 +71,10 @@ const config = {
             // require.resolve('./src/css/code-blocks.css'),
           ],
         },
+        gtag: {
+					trackingID: 'GTM-MBTPCD7S',
+					anonymizeIP: true,
+				},
       }),
     ],
   ],
