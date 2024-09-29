@@ -39,6 +39,9 @@ const config = {
     ['docusaurus-plugin-yandex-metrica', {
       counterID: '98339264',
       enableInProdOnly: true,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
       webvisor: true
     }],
   ],
@@ -101,7 +104,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: '🙃 Не блог',
+            label: '🙃 Вики',
             position: 'left',
             items: [
               {label: '📦 Куча полезностей', type: 'doc', docId: 'intro'},
@@ -115,12 +118,12 @@ const config = {
             className: "header-github-link",
             "aria-label": "GitHub repository",
           },
-          {
-            href: 'https://t.me/bazzziliu5',
-            position: 'right',
-            className: "header-telegram-link",
-            "aria-label": "Telegram",
-          },
+          // {
+          //   href: 'https://t.me/bazzziliu5',
+          //   position: 'right',
+          //   className: "header-telegram-link",
+          //   "aria-label": "Telegram",
+          // },
         ],
       },
       prism: {
