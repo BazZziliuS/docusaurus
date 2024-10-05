@@ -17,3 +17,8 @@ self-hosting:
   label: Cамохостинг
   permalink: /self-hosting
   description: Темы связанные с Самохостингом
+
+filmsandserials:
+  label: Фильмы и сериалы
+  permalink: /filmsandserials
+  description: Темы связанные с Фильмами и сериалами
