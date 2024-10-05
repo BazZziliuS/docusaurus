@@ -99,6 +99,7 @@ const config = {
             label: '✍️ Блог',
             items: [
               {label: 'Главная', to: '/'},
+              {label: 'Теги', to: '/tags'},
               {label: 'Все по годам', to: 'archive'},
             ],
           },
