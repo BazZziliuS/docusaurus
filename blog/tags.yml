@@ -12,3 +12,8 @@ hosting:
   label: Хостинг
   permalink: /hosting
   description: Темы связанные с Хостингом
+
+self-hosting:
+  label: Cамохостинг
+  permalink: /self-hosting
+  description: Темы связанные с Самохостингом
