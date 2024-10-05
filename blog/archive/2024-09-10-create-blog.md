@@ -1,6 +1,7 @@
 ---
 tags: [docusaurus]
 authors: [bazzzilius]
+draft: true
 ---
 
 # Первый блог
