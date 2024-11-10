@@ -10,6 +10,7 @@ const GeoCheck = ({
 }) => {
   const [isRestricted, setIsRestricted] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(blockMessage);
 
   useEffect(() => {
     const fetchLocation = async () => {
@@ -18,8 +19,9 @@ const GeoCheck = ({
         const userCountry = response.data?.country;
         setIsRestricted(onCheck(userCountry, region));
       } catch (error) {
-        console.error('Ошибка при получении данных о местоположении:', error);
+        // console.error('Ошибка при получении данных о местоположении:', error);
         setIsRestricted(true);
+        setErrorMessage("Отключите AdBlock для получения доступа к контенту.");
       } finally {
         setIsLoading(false);
       }
@@ -39,7 +41,7 @@ const GeoCheck = ({
       borderRadius: '8px',
       fontWeight: 'bold',
     }}>
-      {blockMessage}
+      {errorMessage}
     </div>
   ) : (
     <>{children}</>
