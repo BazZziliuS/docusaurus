@@ -137,7 +137,7 @@ const config = {
       },
 			algolia: {
 				appId: "QEC31FXAWB",
-				apiKey: "5cd6537db1f15927e3df9a683a50642d",
+				apiKey: "f8fd8eb8d0139fb3f6a9b7653e673d86",
 				indexName: "bazzzilius",
 			},
     }),
