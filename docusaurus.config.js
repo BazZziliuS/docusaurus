@@ -138,7 +138,7 @@ const config = {
 			algolia: {
 				appId: "QEC31FXAWB",
 				apiKey: "f8fd8eb8d0139fb3f6a9b7653e673d86",
-				indexName: "bazzzilius",
+				indexName: "blog_bazzzilius_ru_qec31fxawb_pages",
 			},
     }),
 };
