@@ -64,6 +64,11 @@ const config = {
           blogSidebarTitle: 'Другие посты',
         },
 
+      sitemap: {
+	lastmod: 'date',
+	ignorePatterns: ['/tags/**', '/page/**'],
+	},
+
         theme: {
           customCss: [
             // not my styles. Taken from here:
