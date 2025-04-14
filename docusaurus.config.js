@@ -127,6 +127,12 @@ const config = {
             className: "header-github-link",
             "aria-label": "GitHub repository",
           },
+          {
+            href: 'https://cc.bazzzilius.ru/zTgOq',
+            position: 'right',
+            className: "header-boosty-link",
+            "aria-label": "Boosty",
+          },
           // {
           //   href: 'https://t.me/bazzziliu5',
           //   position: 'right',
