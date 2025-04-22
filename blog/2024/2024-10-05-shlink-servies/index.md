@@ -1,6 +1,5 @@
 ---
 tags: [self-hosting]
-authors: [bazzzilius]
 ---
 
 # Shlink.io – сокращение ссылок на своем сервере

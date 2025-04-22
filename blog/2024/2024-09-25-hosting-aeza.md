@@ -1,6 +1,5 @@
 ---
 tags: [hosting]
-authors: [bazzzilius]
 ---
 
 # Опробовал хостинг Aéza – мой опыт
