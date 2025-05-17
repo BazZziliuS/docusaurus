@@ -1,6 +1,6 @@
-# blog.bazzzilius.ru
+# blog.cloudea.org
 
-Этот репозиторий содержит исходный код блога, размещённого на [blog.bazzzilius.ru](https://blog.bazzzilius.ru).
+Этот репозиторий содержит исходный код блога, размещённого на [blog.cloudea.org](https://blog.cloudea.org).
 
 ## Вопросы и предложения
 
