@@ -37,7 +37,7 @@ const config = {
 
     plugins: [
         ['docusaurus-plugin-yandex-metrica', {
-            counterID: '98339264',
+            counterID: '101940986',
             enableInProdOnly: true,
             clickmap: true,
             trackLinks: true,
@@ -91,7 +91,7 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             metadata: [
-                { name: 'keywords', content: 'bazzzilius, blog' }
+                { name: 'keywords', content: 'bazzzilius, blog, cloudea, docs' }
             ],
             navbar: {
                 title: '',
