@@ -27,3 +27,18 @@ proxy:
   label: Проксирование
   permalink: /proxy
   description: Темы связанные с проксированием
+
+docker:
+  label: Докер
+  permalink: /docker
+  description: Темы связанные с докером
+
+aeza:
+  label: Aéza
+  permalink: /aeza
+  description: Темы связанные с Aéza
+
+tailscale:
+  label: Tailscale
+  permalink: /tailscale
+  description: Темы связанные с Tailscale
