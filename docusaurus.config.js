@@ -150,6 +150,7 @@ const config = {
                 appId: "TFOGO1GS9R",
                 apiKey: "195bfee57948f3cbdc1951750a4abcf94d8cc9409e3f6ad5d5a464e95e3f5cc8",
                 indexName: "cloudea",
+                insights: true,
             },
         }),
 };
