@@ -42,3 +42,13 @@ tailscale:
   label: Tailscale
   permalink: /tailscale
   description: Темы связанные с Tailscale
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Темы связанные с Linux
+
+telegram:
+  label: Telegram
+  permalink: /telegram
+  description: Темы связанные с Telegram
