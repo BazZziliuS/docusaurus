@@ -52,3 +52,13 @@ telegram:
   label: Telegram
   permalink: /telegram
   description: Темы связанные с Telegram
+
+site:
+  label: Сайт
+  permalink: /site
+  description: Темы связанные с сайтами
+
+minecraft:
+  label: Minecraft
+  permalink: /minecraft
+  description: Темы связанные с minecraft
