@@ -128,7 +128,7 @@ const config = {
                         "aria-label": "GitHub repository",
                     },
                     {
-                        href: 'https://link.cloudea.org/Vjgrd',
+                        href: 'https://boosty.to/bazzzilius/',
                         position: 'right',
                         className: "header-boosty-link",
                         "aria-label": "Boosty",
