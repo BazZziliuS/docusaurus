@@ -44,6 +44,7 @@ const config = {
             accurateTrackBounce: true,
             webvisor: true
         }],
+        '@koroligor/docusaurus-plugin-backlinks'
     ],
 
     presets: [
