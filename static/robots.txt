@@ -27,3 +27,5 @@ Crawl-delay: 5
 
 User-agent: AhrefsBot
 Crawl-delay: 10
+
+# Algolia-Crawler-Verif: F03164FA1B57C913
