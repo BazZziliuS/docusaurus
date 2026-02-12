@@ -1,0 +1,8 @@
+{
+  "label": "💼 Заказные проекты",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Успешно реализованные проекты для клиентов. Discord боты, интеграции и автоматизация."
+  }
+}
