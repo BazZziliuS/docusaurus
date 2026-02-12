@@ -270,7 +270,7 @@ const config = {
             algolia: {
                 appId: "P1AFP1WSPF",
                 apiKey: "7b22b428a0088f392329b9abe2054292",
-                indexName: "blog_cloudea_org_p1afp1wspf_articles",
+                indexName: "blog_cloudea_org_p1afp1wspf_pages",
                 insights: true,
             },
         }),
