@@ -1,0 +1,29 @@
+# Разрешить всем ботам
+User-agent: *
+Allow: /
+
+# Запретить технические страницы
+Disallow: /page/
+Disallow: /tags/*/page/
+
+# Разрешить основные разделы
+Allow: /docs/
+Allow: /blog/
+Allow: /tags/
+
+# Специальные правила для поисковиков
+User-agent: Yandex
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap
+Sitemap: https://blog.cloudea.org/sitemap.xml
+
+# Защита от агрессивных ботов
+User-agent: MJ12bot
+Crawl-delay: 5
+
+User-agent: AhrefsBot
+Crawl-delay: 10
