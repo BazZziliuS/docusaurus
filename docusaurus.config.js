@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.nightOwl;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Блог Cloudea',
-    tagline: 'BazZziliuS, Cloudea, Docusaurus',
+    tagline: 'Технический блог о разработке, self-hosting и автоматизации',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -41,6 +41,14 @@ const config = {
     },
 
     headTags: [
+        // Theme color для Discord embed
+        {
+            tagName: 'meta',
+            attributes: {
+                name: 'theme-color',
+                content: '#2196F3',
+            },
+        },
         // Preconnect для внешних ресурсов
         {
             tagName: 'link',
@@ -179,6 +187,7 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             metadata: [
+                { name: 'description', content: 'Технический блог BazZziliuS о разработке, self-hosting, автоматизации и DevOps. Туториалы по Python, JavaScript, NGINX, Docker, MTProxy, n8n и другим инструментам для разработчиков.' },
                 { name: 'keywords', content: 'bazzzilius, blog, cloudea, docs, хостинг, программирование, разработка, боты' },
                 { name: 'author', content: 'BazZziliuS' },
                 { name: 'robots', content: 'index, follow' },
@@ -187,6 +196,7 @@ const config = {
                 // Open Graph
                 { property: 'og:type', content: 'website' },
                 { property: 'og:site_name', content: 'Блог Cloudea' },
+                { property: 'og:description', content: 'Технический блог BazZziliuS о разработке, self-hosting, автоматизации и DevOps. Туториалы по Python, JavaScript, NGINX, Docker, MTProxy, n8n и другим инструментам для разработчиков.' },
                 { property: 'og:locale', content: 'ru_RU' },
                 { property: 'og:locale:alternate', content: 'en_US' },
                 { property: 'og:image', content: 'https://blog.cloudea.org/img/og-default.png' },
