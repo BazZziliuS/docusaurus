@@ -1,6 +1,9 @@
 ---
 title: "Ваш личный гид по документации"
+description: "Подробное введение в Docusaurus - мощный инструмент для создания статических сайтов и документации. Узнайте о возможностях, установке, настройке и деплое на GitHub Pages."
 tags: [Docusaurus, документация, статический сайт]
+keywords: [docusaurus, документация, статический сайт, github pages, react, blog, mdx, markdown]
+image: /img/og-default.png
 ---
 
 # Введение в Docusaurus: Ваш личный гид по документации

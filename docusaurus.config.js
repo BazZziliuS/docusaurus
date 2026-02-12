@@ -25,7 +25,12 @@ const config = {
     projectName: 'docusaurus', // Usually your repo name.
 
     onBrokenLinks: 'throw',
-    onBrokenMarkdownLinks: 'throw',
+
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: 'throw',
+        },
+    },
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -34,6 +39,67 @@ const config = {
         defaultLocale: 'ru',
         locales: ['ru', 'en'],
     },
+
+    headTags: [
+        // Preconnect для внешних ресурсов
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'preconnect',
+                href: 'https://fonts.googleapis.com',
+            },
+        },
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'preconnect',
+                href: 'https://fonts.gstatic.com',
+                crossorigin: 'anonymous',
+            },
+        },
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'dns-prefetch',
+                href: 'https://www.google-analytics.com',
+            },
+        },
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'dns-prefetch',
+                href: 'https://mc.yandex.ru',
+            },
+        },
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'dns-prefetch',
+                href: 'https://www.googletagmanager.com',
+            },
+        },
+        // JSON-LD для сайта
+        {
+            tagName: 'script',
+            attributes: {
+                type: 'application/ld+json',
+            },
+            innerHTML: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                name: 'Блог Cloudea',
+                url: 'https://blog.cloudea.org',
+                description: 'Технический блог о разработке, хостинге, ботах и автоматизации',
+                author: {
+                    '@type': 'Person',
+                    name: 'BazZziliuS',
+                    url: 'https://blog.cloudea.org/bazzzilius',
+                    jobTitle: 'Back End Engineer',
+                    image: 'https://github.com/bazzzilius.png',
+                },
+            }),
+        },
+    ],
 
     plugins: [
         ['docusaurus-plugin-yandex-metrica', {
@@ -44,7 +110,17 @@ const config = {
             accurateTrackBounce: true,
             webvisor: true
         }],
-        '@koroligor/docusaurus-plugin-backlinks'
+        '@koroligor/docusaurus-plugin-backlinks',
+        [
+            '@docusaurus/plugin-ideal-image',
+            {
+                quality: 85,
+                max: 2000,
+                min: 500,
+                steps: 4,
+                disableInDev: false,
+            },
+        ],
     ],
 
     presets: [
@@ -57,17 +133,28 @@ const config = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl: 'https://github.com/BazZziliuS/docusaurus/tree/main/',
                     showLastUpdateTime: true,
+                    breadcrumbs: true,
                 },
                 blog: {
                     routeBasePath: '/',
                     showReadingTime: true,
                     blogSidebarCount: 'ALL',
                     blogSidebarTitle: 'Другие посты',
+                    feedOptions: {
+                        type: 'all',
+                        title: 'Блог Cloudea',
+                        description: 'Технический блог о разработке, хостинге и автоматизации',
+                        copyright: `Copyright © ${new Date().getFullYear()} BazZziliuS`,
+                        language: 'ru',
+                    },
                 },
 
                 sitemap: {
                     lastmod: 'date',
+                    changefreq: 'weekly',
+                    priority: 0.5,
                     ignorePatterns: ['/tags/**', '/page/**'],
+                    filename: 'sitemap.xml',
                 },
 
                 theme: {
@@ -92,7 +179,23 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             metadata: [
-                { name: 'keywords', content: 'bazzzilius, blog, cloudea, docs' }
+                { name: 'keywords', content: 'bazzzilius, blog, cloudea, docs, хостинг, программирование, разработка, боты' },
+                { name: 'author', content: 'BazZziliuS' },
+                { name: 'robots', content: 'index, follow' },
+
+                // Open Graph
+                { property: 'og:type', content: 'website' },
+                { property: 'og:site_name', content: 'Блог Cloudea' },
+                { property: 'og:locale', content: 'ru_RU' },
+                { property: 'og:locale:alternate', content: 'en_US' },
+                { property: 'og:image', content: 'https://blog.cloudea.org/img/og-default.png' },
+                { property: 'og:image:width', content: '1200' },
+                { property: 'og:image:height', content: '630' },
+
+                // Twitter Cards
+                { name: 'twitter:card', content: 'summary_large_image' },
+                { name: 'twitter:creator', content: '@bazzzilius' },
+                { name: 'twitter:image', content: 'https://blog.cloudea.org/img/og-default.png' },
             ],
             navbar: {
                 title: '',

@@ -16,6 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/plugin-google-gtag": "^3.7.0",
+    "@docusaurus/plugin-ideal-image": "^3.9.2",
     "@docusaurus/preset-classic": "^3.7.0",
     "@giscus/react": "^2.4.0",
     "@koroligor/docusaurus-plugin-backlinks": "^1.0.13",

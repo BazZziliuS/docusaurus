@@ -62,3 +62,23 @@ minecraft:
   label: Minecraft
   permalink: /minecraft
   description: Темы связанные с minecraft
+
+Docusaurus:
+  label: Docusaurus
+  permalink: /Docusaurus
+  description: Статьи о Docusaurus
+
+документация:
+  label: Документация
+  permalink: /docs-tag
+  description: Темы связанные с документацией
+
+статический сайт:
+  label: Статические сайты
+  permalink: /static-sites
+  description: Статические генераторы сайтов
+
+n8n:
+  label: n8n
+  permalink: /n8n
+  description: Автоматизация с n8n

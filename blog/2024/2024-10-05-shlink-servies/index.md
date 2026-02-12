@@ -1,5 +1,9 @@
 ---
+title: "Shlink.io – сокращение ссылок на своем сервере"
+description: "Как настроить self-hosted сервис для сокращения ссылок Shlink.io на своем сервере. Установка через Docker, настройка Nginx, API интеграция и отслеживание статистики переходов."
 tags: [self-hosting]
+keywords: [shlink, сокращение ссылок, self-hosting, docker, nginx, url shortener, api, аналитика, aeza]
+image: /img/og-default.png
 ---
 
 # Shlink.io – сокращение ссылок на своем сервере

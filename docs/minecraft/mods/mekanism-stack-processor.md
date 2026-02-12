@@ -1,6 +1,8 @@
 ---
 title: Mekanism Stack Processor
+description: "NeoForge мод для Minecraft 1.21.1, добавляющий пакетную обработку предметов в машины Mekanism. Ускорение производства в зависимости от уровня машин. На Modrinth и CurseForge."
 tags: [java, minecraft, mod, neoforge, mekanism]
+keywords: [minecraft mod, neoforge, mekanism, stack processing, minecraft 1.21, java, modrinth, curseforge]
 ---
 
 # Mekanism Stack Processor

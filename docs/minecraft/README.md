@@ -1,6 +1,8 @@
 ---
 title: Minecraft проекты
+description: "Коллекция из 10 Minecraft модов и плагинов: собственные разработки и исправления для NeoForge и Forge. Версии 1.20.1 и 1.21.1. Моды на Modrinth и CurseForge."
 tags: [minecraft, mods, java]
+keywords: [minecraft mods, neoforge, forge, mekanism, minecraft 1.21, minecraft development, java mods]
 ---
 
 # ⛏️ Minecraft проекты

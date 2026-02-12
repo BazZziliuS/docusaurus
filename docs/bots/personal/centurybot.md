@@ -1,6 +1,8 @@
 ---
 title: CenturyBOT
+description: "Многофункциональный Discord бот для CenturyMine: система тикетов, управление вакансиями, розыгрыши, опросы. Технологии: Python, Disnake, TinyDB, Pydantic."
 tags: [bots, discord, личный проект]
+keywords: [discord bot, centurymine, python, disnake, тикеты, вакансии, розыгрыши, minecraft]
 ---
 
 # CenturyBOT

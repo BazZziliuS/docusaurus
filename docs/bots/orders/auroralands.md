@@ -1,6 +1,8 @@
 ---
 title: AuroraLands BOT
+description: "Discord бот для управления персоналом проекта AuroraLands. Функции: верификация по кнопке, отправка сообщений, рандомный статус. Разработка на Python и Disnake."
 tags: [bots, discord, заказ]
+keywords: [discord bot, python, disnake, aurora lands, верификация, управление персоналом]
 ---
 
 # AuroraLands BOT

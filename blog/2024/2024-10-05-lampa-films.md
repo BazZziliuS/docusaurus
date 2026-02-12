@@ -1,5 +1,9 @@
 ---
+title: "Как смотреть фильмы в 4K через Lampa"
+description: "Полное руководство по Lampa - медиаплееру для просмотра фильмов и сериалов. Установка плагинов, интеграция с HDrezka, настройка TorServer и решение типичных проблем."
 tags: [filmsandserials]
+keywords: [lampa, фильмы, 4k, torrserver, hdrezka, медиаплеер, стриминг, плагины, онлайн кинотеатр]
+image: /img/og-default.png
 ---
 
 # Как смотреть фильмы в 4K
