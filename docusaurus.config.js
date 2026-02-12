@@ -268,9 +268,9 @@ const config = {
                 additionalLanguages: ['python', 'bash', 'lua', 'nginx'],
             },
             algolia: {
-                appId: "TFOGO1GS9R",
-                apiKey: "195bfee57948f3cbdc1951750a4abcf94d8cc9409e3f6ad5d5a464e95e3f5cc8",
-                indexName: "cloudea",
+                appId: "P1AFP1WSPF",
+                apiKey: "7b22b428a0088f392329b9abe2054292",
+                indexName: "blog_cloudea_org_p1afp1wspf_articles",
                 insights: true,
             },
         }),
