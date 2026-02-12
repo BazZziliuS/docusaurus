@@ -182,6 +182,7 @@ const config = {
                 { name: 'keywords', content: 'bazzzilius, blog, cloudea, docs, хостинг, программирование, разработка, боты' },
                 { name: 'author', content: 'BazZziliuS' },
                 { name: 'robots', content: 'index, follow' },
+                { name: 'theme-color', content: '#2196F3' },
 
                 // Open Graph
                 { property: 'og:type', content: 'website' },
