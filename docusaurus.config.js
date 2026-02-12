@@ -242,11 +242,17 @@ const config = {
                         className: "header-github-link",
                         "aria-label": "GitHub repository",
                     },
+                    // {
+                    //     href: 'https://boosty.to/bazzzilius/',
+                    //     position: 'right',
+                    //     className: "header-boosty-link",
+                    //     "aria-label": "Boosty",
+                    // },
                     {
-                        href: 'https://boosty.to/bazzzilius/',
+                        href: 'https://t.me/tribute/app?startapp=dtnH',
                         position: 'right',
-                        className: "header-boosty-link",
-                        "aria-label": "Boosty",
+                        className: "header-tribute-link",
+                        "aria-label": "Tribute",
                     },
                     // {
                     //   href: 'https://t.me/bazzziliu5',
