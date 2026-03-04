@@ -147,19 +147,69 @@ function renderCard({title, description, tags}) {
 
 /** @type {import('@acid-info/docusaurus-og').ImageRenderer} */
 const blogRenderer = (data) => {
-    if (data.pageType !== 'post') return false;
+    // Отдельный пост
+    if (data.pageType === 'post') {
+        const {metadata} = data.data;
+        return [
+            renderCard({
+                title: metadata.title,
+                description: metadata.description,
+                tags: metadata.tags || [],
+            }),
+            satoriOptions,
+        ];
+    }
 
-    const {metadata} = data.data;
-    const tags = metadata.tags || [];
+    // Главная / список постов
+    if (data.pageType === 'list') {
+        return [
+            renderCard({
+                title: 'Блог Cloudea',
+                description: 'Технический блог о разработке, self-hosting и автоматизации',
+                tags: [],
+            }),
+            satoriOptions,
+        ];
+    }
 
-    return [
-        renderCard({
-            title: metadata.title,
-            description: metadata.description,
-            tags,
-        }),
-        satoriOptions,
-    ];
+    // Архив
+    if (data.pageType === 'archive') {
+        return [
+            renderCard({
+                title: 'Архив постов',
+                description: 'Все публикации блога Cloudea по годам',
+                tags: [],
+            }),
+            satoriOptions,
+        ];
+    }
+
+    // Страница списка тегов
+    if (data.pageType === 'tags') {
+        return [
+            renderCard({
+                title: 'Теги',
+                description: 'Все теги блога Cloudea',
+                tags: [],
+            }),
+            satoriOptions,
+        ];
+    }
+
+    // Отдельный тег
+    if (data.pageType === 'tag') {
+        const tagLabel = data.data?.tag?.label || data.data?.label || 'Тег';
+        return [
+            renderCard({
+                title: `#${tagLabel}`,
+                description: `Все посты с тегом ${tagLabel}`,
+                tags: [],
+            }),
+            satoriOptions,
+        ];
+    }
+
+    return false;
 };
 
 /** @type {import('@acid-info/docusaurus-og').ImageRenderer} */
@@ -176,4 +226,18 @@ const docsRenderer = (data) => {
     ];
 };
 
-module.exports = {blogRenderer, docsRenderer};
+/** @type {import('@acid-info/docusaurus-og').ImageRenderer} */
+const pagesRenderer = (data) => {
+    if (!data.metadata || !data.metadata.title) return false;
+
+    return [
+        renderCard({
+            title: data.metadata.title,
+            description: data.metadata.description || '',
+            tags: [],
+        }),
+        satoriOptions,
+    ];
+};
+
+module.exports = {blogRenderer, docsRenderer, pagesRenderer};

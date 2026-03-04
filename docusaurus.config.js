@@ -6,7 +6,7 @@
 
 const lightCodeTheme = require('prism-react-renderer').themes.nightOwlLight;
 const darkCodeTheme = require('prism-react-renderer').themes.nightOwl;
-const {blogRenderer, docsRenderer} = require('./src/og-image-renderer');
+const {blogRenderer, docsRenderer, pagesRenderer} = require('./src/og-image-renderer');
 const {postBuildFactory} = require('@acid-info/docusaurus-og/lib/server/index');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -137,6 +137,7 @@ const config = {
                 imageRenderers: {
                     'docusaurus-plugin-content-blog': blogRenderer,
                     'docusaurus-plugin-content-docs': docsRenderer,
+                    'docusaurus-plugin-content-pages': pagesRenderer,
                 },
             };
             return {
@@ -178,20 +179,30 @@ const config = {
 
                 sitemap: {
                     lastmod: 'date',
-                    changefreq: 'weekly',
-                    priority: 0.5,
                     ignorePatterns: ['/tags/**', '/page/**'],
                     filename: 'sitemap.xml',
+                    createSitemapItems: async ({defaultCreateSitemapItems, ...params}) => {
+                        const items = await defaultCreateSitemapItems(params);
+                        return items.map((item) => {
+                            // Главная страница — высший приоритет
+                            if (item.url.endsWith('/')) {
+                                return {...item, changefreq: 'daily', priority: 1.0};
+                            }
+                            // Документация
+                            if (item.url.includes('/docs/')) {
+                                return {...item, changefreq: 'monthly', priority: 0.7};
+                            }
+                            // Блог посты
+                            return {...item, changefreq: 'weekly', priority: 0.8};
+                        });
+                    },
                 },
 
                 theme: {
                     customCss: [
-                        // not my styles. Taken from here:
-                        // https://github.com/vendure-ecommerce/vendure/blob/cc4826dfb7c1a2f4e6ed8daa13eb017090d8bd9a/docs/src/css/custom.css
                         require.resolve('./src/css/custom.css'),
                         require.resolve('./src/css/layout.css'),
                         require.resolve('./src/css/overrides.css'),
-                        // require.resolve('./src/css/code-blocks.css'),
                     ],
                 },
                 gtag: {
