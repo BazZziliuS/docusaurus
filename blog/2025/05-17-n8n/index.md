@@ -3,7 +3,6 @@ title: "Проксирование n8n через AEZA, Tailscale и NGINX"
 description: "Как настроить безопасное проксирование n8n с домашнего ПК через AEZA, Tailscale mesh-VPN и NGINX. Полная инструкция с примерами конфигов, настройкой HTTPS и решением проблем с ECH в Cloudflare."
 tags: [self-hosting, proxy, docker, n8n, aeza, tailscale]
 keywords: [n8n, self-hosting, aeza, tailscale, nginx, docker, proxy, automation, vpn, cloudflare, webhook]
-image: /img/og-default.png
 ---
 
 # 🔁 Проксирование n8n через AEZA, Tailscale и NGINX

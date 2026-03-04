@@ -6,6 +6,8 @@
 
 const lightCodeTheme = require('prism-react-renderer').themes.nightOwlLight;
 const darkCodeTheme = require('prism-react-renderer').themes.nightOwl;
+const {blogRenderer, docsRenderer} = require('./src/og-image-renderer');
+const {postBuildFactory} = require('@acid-info/docusaurus-og/lib/server/index');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -129,6 +131,23 @@ const config = {
                 disableInDev: false,
             },
         ],
+        function ogImagePlugin() {
+            const ogOptions = {
+                path: './preview-images',
+                imageRenderers: {
+                    'docusaurus-plugin-content-blog': blogRenderer,
+                    'docusaurus-plugin-content-docs': docsRenderer,
+                },
+            };
+            return {
+                name: 'docusaurus-og-wrapper',
+                async postBuild(props) {
+                    // Плагин OG не поддерживает i18n — генерируем только для дефолтной локали
+                    if (props.i18n.currentLocale !== props.i18n.defaultLocale) return;
+                    await postBuildFactory(ogOptions)(props);
+                },
+            };
+        },
     ],
 
     presets: [
@@ -199,14 +218,9 @@ const config = {
                 { property: 'og:description', content: 'Технический блог BazZziliuS о разработке, self-hosting, автоматизации и DevOps. Туториалы по Python, JavaScript, NGINX, Docker, MTProxy, n8n и другим инструментам для разработчиков.' },
                 { property: 'og:locale', content: 'ru_RU' },
                 { property: 'og:locale:alternate', content: 'en_US' },
-                { property: 'og:image', content: 'https://blog.cloudea.org/img/og-default.png' },
-                { property: 'og:image:width', content: '1200' },
-                { property: 'og:image:height', content: '630' },
-
                 // Twitter Cards
                 { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:creator', content: '@bazzzilius' },
-                { name: 'twitter:image', content: 'https://blog.cloudea.org/img/og-default.png' },
             ],
             navbar: {
                 title: '',
@@ -242,24 +256,12 @@ const config = {
                         className: "header-github-link",
                         "aria-label": "GitHub repository",
                     },
-                    // {
-                    //     href: 'https://boosty.to/bazzzilius/',
-                    //     position: 'right',
-                    //     className: "header-boosty-link",
-                    //     "aria-label": "Boosty",
-                    // },
                     {
                         href: 'https://t.me/tribute/app?startapp=dtnH',
                         position: 'right',
                         className: "header-tribute-link",
                         "aria-label": "Tribute",
                     },
-                    // {
-                    //   href: 'https://t.me/bazzziliu5',
-                    //   position: 'right',
-                    //   className: "header-telegram-link",
-                    //   "aria-label": "Telegram",
-                    // },
                 ],
             },
             prism: {

@@ -3,7 +3,6 @@ title: "Как совместить сайт и Minecraft-сервер на од
 description: "Простой способ настроить сайт и Minecraft-сервер на одном домене. Используйте A/CNAME для сайта и SRV-запись для сервера - подробная инструкция с примерами DNS конфигурации."
 tags: [minecraft, hosting, proxy, site]
 keywords: [minecraft, сервер, домен, dns, srv запись, хостинг, сайт, vercel, minecraft server, hosting]
-image: /img/og-default.png
 ---
 
 # 🎮+🌐 Один домен для сайта и Minecraft-сервера

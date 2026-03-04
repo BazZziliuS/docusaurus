@@ -21,7 +21,7 @@ export default function BlogPostItemWrapper(props: Props): ReactNode {
     description: metadata.description || frontMatter.description || metadata.title,
     image: frontMatter.image
       ? `https://blog.cloudea.org${frontMatter.image}`
-      : 'https://blog.cloudea.org/img/og-default.png',
+      : `https://blog.cloudea.org/preview-images${metadata.permalink.replace(/\/$/, '')}.png`,
     datePublished: metadata.date,
     dateModified: metadata.lastUpdatedAt || metadata.date,
     author: {
